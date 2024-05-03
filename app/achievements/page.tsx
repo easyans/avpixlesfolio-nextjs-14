@@ -6,6 +6,10 @@ import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Form } from "../components/Form";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Image from "next/image";
+import prize from '../../public/prize.jpeg'
+import paper from '../../public/paper.jpeg'
+import certificate from '../../public/certificate.jpeg'
 
 export default function Guestbookpage() {
   return (
@@ -21,11 +25,12 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                  <img
-                    src={`https://media.licdn.com/dms/image/D5622AQG8juPhCS8Q-g/feedshare-shrink_800/0/1682316194477?e=1717632000&v=beta&t=Y7hDKrCbI_h8xg39qkzGMIcdrUrsUgIiILZP9xeVGbU`}
+                <Image
+                    src={prize}
                     alt={`Random image ${index + 1}`}
                     className="w-full h-full object-cover rounded-sm"
-                  />
+                    style={{ width: '400px', height: '400px' }}
+                />
                 </Card>
                 <div>
                     <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
@@ -48,11 +53,12 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                  <img
-                    src={`https://media.licdn.com/dms/image/D4E22AQHmO7Exl11CqA/feedshare-shrink_800/0/1710921508429?e=1717632000&v=beta&t=KHH58hDK42mXNv-RQpDcBz5AZdCoqzFpm0osVn1Pw4U`}
+                <Image
+                    src={paper}
                     alt={`Random image ${index + 1}`}
                     className="w-full h-full object-cover rounded-sm"
-                  />
+                    style={{ width: '400px', height: '400px' }}
+                />
                 </Card>
                 <div>
                     <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
@@ -76,11 +82,12 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                  <img
-                    src={`https://media.licdn.com/dms/image/D5622AQFyM0_5_tnHxw/feedshare-shrink_800/0/1680709858457?e=1717632000&v=beta&t=vjg1rIkh_6slXifE4s1KnCLDjZ3ky6GLfa1BEqJvkRY`}
+                <Image
+                    src={certificate}
                     alt={`Random image ${index + 1}`}
-                    className="w-full h-full object-cover rounded-sm "
-                  />
+                    className="w-full h-full object-cover rounded-sm"
+                    style={{ width: '400px', height: '400px' }}
+                />
                 </Card>
                 <div>
                     <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
