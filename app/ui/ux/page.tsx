@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 async function getData() {
-    const query = `*[_type == 'uiux'] {
+    const query = `*[_type == 'uiux']  | order(_createdAt desc) [0...4] {
         title,
           _id,
           link,

@@ -25,22 +25,22 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                <Image
+                  <Image
                     src={prize}
                     alt={`Random image ${index + 1}`}
                     className="w-full h-full object-cover rounded-sm"
                     style={{ width: '400px', height: '400px' }}
-                />
+                  />
                 </Card>
                 <div>
-                    <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
-                        UI/UX <span className="text-blue-600">Winners</span>
-                    </h1>
-                    <p className="text-base text-slate-400 text-justify">
-                    Hackathon conducted by TEXUS'23 and Organised by the Department
+                  <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
+                    UI/UX <span className="text-blue-600">Winners</span>
+                  </h1>
+                  <p className="text-base text-slate-400 text-justify">
+                    Hackathon conducted by TEXUS&apos;23 and Organised by the Department
                     of Computer Science, SRM Institute of Science and Technology, Ramapuram Campus.
                     Took Place at IITM Incubation Cell.
-                    </p>
+                  </p>
                 </div>
               </CarouselItem>
             ))}
@@ -53,22 +53,22 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                <Image
+                  <Image
                     src={paper}
                     alt={`Random image ${index + 1}`}
                     className="w-full h-full object-cover rounded-sm"
                     style={{ width: '400px', height: '400px' }}
-                />
+                  />
                 </Card>
                 <div>
-                    <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
-                        Research <span className="text-blue-600">Publication</span>
-                    </h1>
-                    <p className="text-base text-slate-400 text-justify">
-                    I'm excited to contribute to the field of App Development.
-                    Additionally, I'm proud to announce that I've recently earned my ARET-2024
+                  <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
+                    Research <span className="text-blue-600">Publication</span>
+                  </h1>
+                  <p className="text-base text-slate-400 text-justify">
+                    I&apos;m excited to contribute to the field of App Development.
+                    Additionally, I&apos;m proud to announce that I&apos;ve recently earned my ARET-2024
                     certification of Presentation and Publication.
-                    </p>
+                  </p>
                 </div>
               </CarouselItem>
             ))}
@@ -82,39 +82,28 @@ export default function Guestbookpage() {
             {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="overflow-hidden aspect-square flex items-center justify-center p-4">
-                <Image
+                  <Image
                     src={certificate}
                     alt={`Random image ${index + 1}`}
                     className="w-full h-full object-cover rounded-sm"
                     style={{ width: '400px', height: '400px' }}
-                />
+                  />
                 </Card>
                 <div>
-                    <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
+                  <h1 className="text-2xl font-semibold sm:text-2xl pt-5">
                     Oracle <span className="text-blue-600">Database Foundations</span>
-                    </h1>
-                    <p className="text-base text-slate-400 text-justify">
+                  </h1>
+                  <p className="text-base text-slate-400 text-justify">
                     Oracle Database Foundations course.Now I have gained a solid understanding
                     of the underlying ideas behind database management
                     utilising Oracle technology thanks to this extensive training.
-                    </p>
+                  </p>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-
-
-
-
-
-
         </Carousel>
-
-
-
-
       </div>
-
     </section>
   );
 }
